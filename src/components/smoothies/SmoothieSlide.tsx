@@ -3,18 +3,20 @@ import { SmoothieData } from "../../types/smoothie";
 
 interface SmoothieSlideProps {
   smoothie: SmoothieData;
+  onClick?: () => void;
 }
 
-const SmoothieSlide = ({ smoothie }: SmoothieSlideProps) => {
+const SmoothieSlide = ({ smoothie, onClick }: SmoothieSlideProps) => {
   return (
     <div 
-      className="carousel-slide h-full"
+      className="carousel-slide h-full w-full flex-shrink-0 cursor-pointer"
       style={{ 
         background: `linear-gradient(to bottom, white, ${smoothie.bgColor})` 
       }}
+      onClick={onClick}
     >
       <div className="container-custom h-full flex flex-col items-center justify-center pt-10">
-        <p className="text-xl mb-2">Introducing our <em className="font-semibold italic">signature</em> menu</p>
+        <p className="text-xl mb-2">Freshfuel <em className="font-semibold italic">Signature</em> Smoothies</p>
         <h2 className="text-6xl md:text-7xl font-bold mb-8 text-white drop-shadow-md">{smoothie.name}</h2>
         
         {smoothie.isBestSeller && (
