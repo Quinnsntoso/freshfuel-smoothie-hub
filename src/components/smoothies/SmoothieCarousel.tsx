@@ -1,5 +1,5 @@
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { SmoothieData } from "../../types/smoothie";
 import SmoothieSlide from "./SmoothieSlide";
@@ -13,6 +13,13 @@ interface SmoothieCarouselProps {
 const SmoothieCarousel = ({ smoothies, onSelect }: SmoothieCarouselProps) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
+  // Effect to notify parent component whenever the current slide changes
+  useEffect(() => {
+    if (onSelect && smoothies.length > 0) {
+      onSelect(smoothies[currentIndex]);
+    }
+  }, [currentIndex, smoothies, onSelect]);
+
   const nextSlide = () => {
     setCurrentIndex((prevIndex) => 
       prevIndex === smoothies.length - 1 ? 0 : prevIndex + 1
@@ -23,12 +30,6 @@ const SmoothieCarousel = ({ smoothies, onSelect }: SmoothieCarouselProps) => {
     setCurrentIndex((prevIndex) => 
       prevIndex === 0 ? smoothies.length - 1 : prevIndex - 1
     );
-  };
-
-  const handleSelect = () => {
-    if (onSelect) {
-      onSelect(smoothies[currentIndex]);
-    }
   };
 
   return (
@@ -44,7 +45,6 @@ const SmoothieCarousel = ({ smoothies, onSelect }: SmoothieCarouselProps) => {
           <SmoothieSlide 
             key={smoothie.id} 
             smoothie={smoothie} 
-            onClick={handleSelect}
           />
         ))}
       </div>

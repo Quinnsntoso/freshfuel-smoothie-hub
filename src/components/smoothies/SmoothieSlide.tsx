@@ -1,9 +1,7 @@
-
 import { SmoothieData } from "../../types/smoothie";
 
 interface SmoothieSlideProps {
   smoothie: SmoothieData;
-  onClick?: () => void;
 }
 
 interface HighlightStyle {
@@ -12,7 +10,7 @@ interface HighlightStyle {
   textColor: string;
 }
 
-const SmoothieSlide = ({ smoothie, onClick }: SmoothieSlideProps) => {
+const SmoothieSlide = ({ smoothie }: SmoothieSlideProps) => {
   // Function to get the appropriate gradient based on smoothie name
   const getGradientStyle = () => {
     switch (smoothie.name) {
@@ -77,11 +75,10 @@ const SmoothieSlide = ({ smoothie, onClick }: SmoothieSlideProps) => {
 
   return (
     <div 
-      className="carousel-slide h-full w-full flex-shrink-0 cursor-pointer"
+      className="carousel-slide h-full w-full flex-shrink-0"
       style={{ 
         background: getGradientStyle()
       }}
-      onClick={onClick}
     >
       <div className="container-custom h-full flex flex-col items-center justify-center pt-10">
         <p className="text-xl mb-2">Freshfuel <em className="font-semibold italic">Signature</em> Smoothies</p>

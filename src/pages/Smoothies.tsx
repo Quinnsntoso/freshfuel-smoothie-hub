@@ -1,5 +1,5 @@
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 import Layout from "../components/Layout";
 import SmoothieCarousel from "../components/smoothies/SmoothieCarousel";
@@ -9,6 +9,13 @@ import { SmoothieData } from "../types/smoothie";
 
 const Smoothies = () => {
   const [selectedSmoothie, setSelectedSmoothie] = useState<SmoothieData | null>(null);
+  
+  // Set initial smoothie when component mounts
+  useEffect(() => {
+    if (smoothies.length > 0) {
+      setSelectedSmoothie(smoothies[0]);
+    }
+  }, []);
   
   return (
     <Layout>
@@ -25,14 +32,14 @@ const Smoothies = () => {
           
           <SmoothieCarousel 
             smoothies={smoothies}
-            onSelect={(smoothie) => setSelectedSmoothie(smoothie)}
+            onSelect={setSelectedSmoothie}
           />
         </div>
         
         {selectedSmoothie && (
           <SmoothieDetail 
             smoothie={selectedSmoothie}
-            onClose={() => setSelectedSmoothie(null)}
+            onClose={() => {}} // Empty function as we no longer need to close it
           />
         )}
         
