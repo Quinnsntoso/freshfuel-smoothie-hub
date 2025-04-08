@@ -18,8 +18,8 @@ const Logo = ({ size = "default" }: LogoProps) => {
   
   // Use white logo for dark backgrounds, black logo for light backgrounds
   const logoSrc = useDarkBackground() 
-    ? "/lovable-uploads/65512d21-fe5b-46df-baca-eb3356cd0498.png" // White version on dark background
-    : "/lovable-uploads/65512d21-fe5b-46df-baca-eb3356cd0498.png"; // Same logo for both backgrounds
+    ? "/lovable-uploads/49a4d497-2afe-4152-a0b8-4afd0081383f.png" // New logo for both backgrounds
+    : "/lovable-uploads/49a4d497-2afe-4152-a0b8-4afd0081383f.png"; // Same logo for both backgrounds
 
   // Determine width class based on size prop
   const widthClass = size === "large" ? "w-48" : "w-32";
