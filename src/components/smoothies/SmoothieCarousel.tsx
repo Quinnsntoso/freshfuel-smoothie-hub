@@ -79,6 +79,11 @@ const SmoothieCarousel = ({ smoothies, onSelect }: SmoothieCarouselProps) => {
       >
         <ChevronRight size={24} />
       </Button>
+
+      {/* Add debug information */}
+      <div className="absolute top-2 right-2 text-xs text-black bg-white/70 px-2 py-1 rounded">
+        Slide: {currentIndex + 1}/{smoothies.length}
+      </div>
     </div>
   );
 };

@@ -56,7 +56,8 @@ const SmoothieSlide = ({ smoothie, onClick }: SmoothieSlideProps) => {
           <img 
             src={smoothie.image} 
             alt={smoothie.name} 
-            className="w-full h-auto animate-float"
+            className="w-full h-auto object-contain"
+            style={{ maxHeight: '300px' }}
           />
           
           <div className="absolute inset-0 -z-10 flex flex-wrap justify-around items-center">
