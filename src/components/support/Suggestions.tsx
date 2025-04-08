@@ -105,7 +105,7 @@ const Suggestions = () => {
         
         <button
           type="submit"
-          className="py-2 px-6 bg-black text-white rounded-full hover:bg-gray-800 transition-colors"
+          className="py-2 px-6 bg-freshfuel-warmBeige text-white rounded-full hover:bg-freshfuel-warmBeige/90 transition-colors"
           disabled={isSubmitting}
         >
           {isSubmitting ? "Submitting..." : "Submit Suggestion"}

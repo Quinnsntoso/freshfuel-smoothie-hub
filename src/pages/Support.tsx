@@ -28,7 +28,7 @@ const Support = () => {
                   key={tab.id}
                   className={`px-6 py-2 rounded-full text-sm font-medium transition-colors ${
                     activeTab === tab.id 
-                      ? "bg-black text-white" 
+                      ? "bg-freshfuel-warmBeige text-white" 
                       : "bg-white border border-gray-300 hover:bg-gray-100"
                   }`}
                   onClick={() => setActiveTab(tab.id)}

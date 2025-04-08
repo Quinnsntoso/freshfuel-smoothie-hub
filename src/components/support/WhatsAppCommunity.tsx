@@ -123,7 +123,7 @@ const WhatsAppCommunity = () => {
             
             <button
               type="submit"
-              className="w-full py-2 px-4 bg-green-600 text-white rounded-md hover:bg-green-700 transition-colors"
+              className="w-full py-2 px-4 bg-freshfuel-warmBeige text-white rounded-md hover:bg-freshfuel-warmBeige/90 transition-colors"
               disabled={isSubmitting}
             >
               {isSubmitting ? "Joining..." : "Join Community"}

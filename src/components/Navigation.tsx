@@ -18,7 +18,7 @@ const Navigation = () => {
     
   const linkClasses = isDarkBackground()
     ? "nav-link font-heading text-white hover:text-freshfuel-pearGreen"
-    : "nav-link font-heading text-freshfuel-muteBlack hover:text-freshfuel-pomegranate";
+    : "nav-link font-heading text-freshfuel-muteBlack hover:text-white";
 
   return (
     <nav className={navClasses}>

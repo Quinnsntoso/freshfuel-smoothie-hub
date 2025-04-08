@@ -98,7 +98,7 @@
   }
   
   .nav-link {
-    @apply px-6 py-2 border-2 border-black rounded-full transition-all hover:bg-black hover:text-white;
+    @apply px-6 py-2 border-2 border-black rounded-full transition-all hover:bg-freshfuel-warmBeige hover:border-freshfuel-warmBeige hover:text-white;
   }
   
   .best-seller-badge {
