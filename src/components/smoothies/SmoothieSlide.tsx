@@ -26,6 +26,49 @@ const SmoothieSlide = ({ smoothie, onClick }: SmoothieSlideProps) => {
     }
   };
 
+  // Function to determine if an ingredient should be highlighted and with which color
+  const getIngredientStyle = (ingredient: string) => {
+    const highlightMap: Record<string, string> = {
+      "BEAUTY BURST": {
+        ingredient: "Collagen",
+        color: "#fca7b1", // Pink
+        textColor: "#ffffff"
+      },
+      "ACTIVE FUEL": {
+        ingredient: "Peanut Butter", // No "Active Charcoal" in ingredients, using available ingredient
+        color: "#c9c9c9", // Gray
+        textColor: "#000000"
+      },
+      "ENERGY BLAST": {
+        ingredient: "Electrolyte Powder",
+        color: "#ffd485", // Yellow
+        textColor: "#000000"
+      },
+      "TROPICAL IMMUNE": {
+        ingredient: "Vitamin C Powder",
+        color: "#ffc1a1", // Orange
+        textColor: "#000000"
+      },
+      "SUNRISE OATS": {
+        ingredient: "Green Spirulina",
+        color: "#c8e0a0", // Light green
+        textColor: "#000000"
+      }
+    };
+
+    const highlight = highlightMap[smoothie.name];
+    
+    if (highlight && ingredient.includes(highlight.ingredient)) {
+      return {
+        backgroundColor: highlight.color,
+        color: highlight.textColor,
+        borderColor: highlight.color,
+        fontWeight: 'bold'
+      };
+    }
+    return {};
+  };
+
   return (
     <div 
       className="carousel-slide h-full w-full flex-shrink-0 cursor-pointer"
@@ -65,6 +108,7 @@ const SmoothieSlide = ({ smoothie, onClick }: SmoothieSlideProps) => {
               <div 
                 key={index}
                 className="ingredient-tag m-2"
+                style={getIngredientStyle(ingredient)}
               >
                 {ingredient}
               </div>

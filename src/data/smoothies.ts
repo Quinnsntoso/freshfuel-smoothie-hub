@@ -27,7 +27,7 @@ export const smoothies: SmoothieData[] = [
     id: 2,
     name: "ACTIVE FUEL",
     tagline: "Refuel. Recharge. Repeat.",
-    ingredients: ["Muesli", "Oats", "Banana", "Peanut Butter"],
+    ingredients: ["Muesli", "Oats", "Banana", "Peanut Butter", "Active Charcoal"],
     image: graySmoothieImage,
     bgColor: "#c9c9c9", // gray
     description: "A post-workout blend designed to help your body bounce back, stronger.",
