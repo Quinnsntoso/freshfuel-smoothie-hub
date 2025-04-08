@@ -1,12 +1,10 @@
 
-import { X } from "lucide-react";
 import { SmoothieData } from "../../types/smoothie";
-import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 
 interface SmoothieDetailProps {
   smoothie: SmoothieData;
-  onClose: () => void;
+  onClose?: () => void; // Making this optional
 }
 
 const SmoothieDetail = ({ smoothie, onClose }: SmoothieDetailProps) => {
@@ -59,14 +57,7 @@ const SmoothieDetail = ({ smoothie, onClose }: SmoothieDetailProps) => {
       <div className="container-custom">
         <div className="flex justify-between items-center mb-8">
           <h2 className="text-3xl font-bold">Smoothie Details</h2>
-          <Button 
-            variant="ghost" 
-            size="icon" 
-            onClick={onClose} 
-            aria-label="Close details"
-          >
-            <X size={24} />
-          </Button>
+          {/* Removed the close button that was here */}
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">

@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 import Layout from "../components/Layout";
@@ -39,7 +38,6 @@ const Smoothies = () => {
         {selectedSmoothie && (
           <SmoothieDetail 
             smoothie={selectedSmoothie}
-            onClose={() => {}} // Empty function as we no longer need to close it
           />
         )}
         

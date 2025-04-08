@@ -35,17 +35,20 @@ const SmoothieCarousel = ({ smoothies, onSelect }: SmoothieCarouselProps) => {
   return (
     <div className="carousel-container h-[550px] md:h-[650px] relative overflow-hidden">
       <div 
-        className="carousel-slides h-full flex transition-transform duration-500 ease-in-out"
-        style={{ 
-          transform: `translateX(-${currentIndex * 100}%)`,
-          width: `${smoothies.length * 100}%`
-        }}
+        className="carousel-slides h-full w-full"
       >
-        {smoothies.map((smoothie) => (
-          <SmoothieSlide 
+        {/* Only render the current slide for better performance */}
+        {smoothies.map((smoothie, index) => (
+          <div 
             key={smoothie.id} 
-            smoothie={smoothie} 
-          />
+            style={{ 
+              display: index === currentIndex ? 'block' : 'none',
+              width: '100%',
+              height: '100%'
+            }}
+          >
+            <SmoothieSlide smoothie={smoothie} />
+          </div>
         ))}
       </div>
       
