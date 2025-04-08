@@ -14,29 +14,29 @@ const SmoothieDetail = ({ smoothie, onClose }: SmoothieDetailProps) => {
   const getIngredientStyle = (ingredient: string) => {
     const highlightMap: Record<string, {color: string, bgColor: string, textColor: string}> = {
       "Collagen": {
-        color: "#fca7b1", // Pink for Beauty Burst
-        bgColor: "#fca7b150",
-        textColor: "#000000"
+        color: "#a91a30", // Beauty Burst
+        bgColor: "#a91a30",
+        textColor: "#ffffff"
       },
       "Active Charcoal": {
-        color: "#6b6b6b", // Gray for Active Fuel
-        bgColor: "#6b6b6b50",
+        color: "#030260", // Active Fuel
+        bgColor: "#030260",
         textColor: "#ffffff"
       },
       "Electrolyte Powder": {
-        color: "#ffd485", // Yellow for Energy Blast
-        bgColor: "#ffd48550",
-        textColor: "#000000"
+        color: "#f9b703", // Energy Blast
+        bgColor: "#f9b703",
+        textColor: "#ffffff"
       },
       "Vitamin C Powder": {
-        color: "#ffc1a1", // Orange for Tropical Immune
-        bgColor: "#ffc1a150", 
-        textColor: "#000000"
+        color: "#f8975d", // Tropical Immune
+        bgColor: "#f8975d", 
+        textColor: "#ffffff"
       },
       "Green Spirulina": {
-        color: "#c8e0a0", // Light Green for Sunrise Oats
-        bgColor: "#c8e0a050",
-        textColor: "#000000"
+        color: "#bdc88c", // Sunrise Oats
+        bgColor: "#bdc88c",
+        textColor: "#ffffff"
       }
     };
     
@@ -48,7 +48,6 @@ const SmoothieDetail = ({ smoothie, onClose }: SmoothieDetailProps) => {
           color: style.textColor,
           borderColor: style.color,
           borderWidth: '2px',
-          fontWeight: 'bold' as const
         };
       }
     }
