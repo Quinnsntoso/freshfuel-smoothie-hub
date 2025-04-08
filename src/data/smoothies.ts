@@ -11,31 +11,30 @@ const graySmoothieImage = "/lovable-uploads/a51759f2-f511-4e6e-acc3-a16d9641b052
 export const smoothies: SmoothieData[] = [
   {
     id: 1,
-    name: "SUNRISE OATS",
-    tagline: "Your smart breakfast on the go.",
-    ingredients: ["Banana", "Muesli & Oats", "Green Spirulina"],
-    image: greenSmoothieImage,
-    bgColor: "#c8e0a0", // light green
-    description: "A balanced, protein-rich blend to kickstart your morning with clean energy.",
+    name: "BEAUTY BURST",
+    tagline: "Glow from within.",
+    ingredients: ["Strawberry", "Raspberry", "Blueberry", "Collagen"],
+    image: pinkSmoothieImage,
+    bgColor: "#ffc1c8", // pink
+    description: "A fruity collagen blend that helps your skin stay radiant and healthy.",
     healthBenefits: [
-      "Supports digestion",
-      "Promotes sustained energy",
-      "Provides antioxidant support"
+      "Enhances skin elasticity",
+      "Supports collagen regeneration",
+      "Helps brighten complexion"
     ]
   },
   {
     id: 2,
-    name: "TROPICAL IMMUNE",
-    tagline: "Immunity in every sip.",
-    ingredients: ["Mango", "Raspberry", "Vitamin C Powder"],
-    image: orangeSmoothieImage,
-    bgColor: "#ffc1a1", // orange
-    isBestSeller: true,
-    description: "A vibrant tropical mix to boost your defenses and keep you energized.",
+    name: "ACTIVE FUEL",
+    tagline: "Refuel. Recharge. Repeat.",
+    ingredients: ["Muesli", "Oats", "Banana", "Peanut Butter"],
+    image: graySmoothieImage,
+    bgColor: "#c9c9c9", // gray
+    description: "A post-workout blend designed to help your body bounce back, stronger.",
     healthBenefits: [
-      "Strengthens the immune system",
-      "Rich in antioxidants",
-      "Supports daily vitality"
+      "Aids muscle recovery",
+      "Supports digestion",
+      "Detoxifies with activated charcoal"
     ]
   },
   {
@@ -55,30 +54,31 @@ export const smoothies: SmoothieData[] = [
   },
   {
     id: 4,
-    name: "BEAUTY BURST",
-    tagline: "Glow from within.",
-    ingredients: ["Strawberry", "Raspberry", "Blueberry", "Collagen"],
-    image: pinkSmoothieImage,
-    bgColor: "#ffc1c8", // pink
-    description: "A fruity collagen blend that helps your skin stay radiant and healthy.",
+    name: "TROPICAL IMMUNE",
+    tagline: "Immunity in every sip.",
+    ingredients: ["Mango", "Raspberry", "Vitamin C Powder"],
+    image: orangeSmoothieImage,
+    bgColor: "#ffc1a1", // orange
+    isBestSeller: true,
+    description: "A vibrant tropical mix to boost your defenses and keep you energized.",
     healthBenefits: [
-      "Enhances skin elasticity",
-      "Supports collagen regeneration",
-      "Helps brighten complexion"
+      "Strengthens the immune system",
+      "Rich in antioxidants",
+      "Supports daily vitality"
     ]
   },
   {
     id: 5,
-    name: "ACTIVE FUEL",
-    tagline: "Refuel. Recharge. Repeat.",
-    ingredients: ["Muesli", "Oats", "Banana", "Peanut Butter"],
-    image: graySmoothieImage,
-    bgColor: "#c9c9c9", // gray
-    description: "A post-workout blend designed to help your body bounce back, stronger.",
+    name: "SUNRISE OATS",
+    tagline: "Your smart breakfast on the go.",
+    ingredients: ["Banana", "Muesli & Oats", "Green Spirulina"],
+    image: greenSmoothieImage,
+    bgColor: "#c8e0a0", // light green
+    description: "A balanced, protein-rich blend to kickstart your morning with clean energy.",
     healthBenefits: [
-      "Aids muscle recovery",
       "Supports digestion",
-      "Detoxifies with activated charcoal"
+      "Promotes sustained energy",
+      "Provides antioxidant support"
     ]
   }
 ];
