@@ -11,19 +11,18 @@ const About = () => {
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-5xl font-bold mb-6">About Freshfuel</h1>
             <p className="text-xl mb-8">
-              Fueling your body with nature's goodness, one smoothie at a time.
+              Freshfuel is an Indonesian smoothie company offering healthy, tasty, and practical options personalized with AI technology.
             </p>
             
             <div className="bg-white p-8 rounded-lg shadow-md">
               <h2 className="text-2xl font-semibold mb-4">Our Vision</h2>
               <p className="text-lg mb-8">
-                To create a healthier world by making nutritious, delicious smoothies accessible to everyone, every day.
+                To become the leading smoothie brand in Indonesia by providing innovative and affordable health solutions.
               </p>
               
               <h2 className="text-2xl font-semibold mb-4">Our Mission</h2>
               <p className="text-lg">
-                At Freshfuel, we carefully craft every smoothie using only the freshest ingredients, 
-                providing you with the perfect blend of nutrition and taste to power your day.
+                To deliver high-quality smoothies tailored to customer needs through innovation, education, and technology.
               </p>
             </div>
             
