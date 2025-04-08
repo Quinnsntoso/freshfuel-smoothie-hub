@@ -7,11 +7,30 @@ interface SmoothieSlideProps {
 }
 
 const SmoothieSlide = ({ smoothie, onClick }: SmoothieSlideProps) => {
+  // Function to get the appropriate gradient based on smoothie name
+  const getGradientStyle = () => {
+    switch (smoothie.name) {
+      case "BEAUTY BURST":
+        return "linear-gradient(135deg, #fefcf5, rgba(252, 167, 177, 0.7), #fca7b1, rgba(252, 167, 177, 0.7), #fefcf5)";
+      case "ACTIVE FUEL":
+        return "linear-gradient(135deg, #fefcf5, rgba(255, 215, 152, 0.7), #f6c16c, rgba(246, 193, 108, 0.7), #fefcf5)";
+      case "ENERGY BLAST":
+        return "linear-gradient(135deg, #fefcf5, rgba(255, 215, 152, 0.7), #f6c16c, rgba(246, 193, 108, 0.7), #fefcf5)";
+      case "TROPICAL IMMUNE":
+        return "linear-gradient(135deg, #fefcf5, rgba(248, 151, 93, 0.7), #f8975d, rgba(248, 151, 93, 0.7), #fefcf5)";
+      case "SUNRISE OATS":
+        return "linear-gradient(135deg, #fefcf5, rgba(189, 200, 140, 0.7), #bdc88c, rgba(189, 200, 140, 0.7), #fefcf5)";
+      default:
+        // Fallback to the original background color if needed
+        return `linear-gradient(to bottom, white, ${smoothie.bgColor})`;
+    }
+  };
+
   return (
     <div 
       className="carousel-slide h-full w-full flex-shrink-0 cursor-pointer"
       style={{ 
-        background: `linear-gradient(to bottom, white, ${smoothie.bgColor})` 
+        background: getGradientStyle()
       }}
       onClick={onClick}
     >
