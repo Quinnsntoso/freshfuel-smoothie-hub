@@ -53,21 +53,28 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
-				// Freshfuel custom colors
+				// Freshfuel Primary Colors
 				freshfuel: {
-					green: "#a2c579",
-					pink: "#ffc1c8",
-					orange: "#ffcc80",
-					peach: "#ffd4a8",
-					gray: "#7a7a7a",
-				},
-				smoothie: {
-					green: "#c8e0a0",     // Sunrise Oats
-					pink: "#ffc1c8",      // Beauty Burst
-					gray: "#c9c9c9",      // Active Fuel
-					yellow: "#ffd485",    // Energy Blast
-					orange: "#ffc4a1",    // Tropical Immune
+					warmBeige: "#030260",
+					mustard: "#1A30B4",
+					rhubarb: "#702525",
+					pomegranate: "#BD1111",
+					pearGreen: "#ECB344",
+					pineGreen: "#3E502B",
+					// Secondary Colors
+					muteBlack: "#242424",
+					windhamCream: "#E8DAAA",
+					violet: "#8E19A6",
+					lavender: "#F8D4FA",
+					lightGrey: "#EFEFEF",
+					white: "#FFFFFF"
 				}
+			},
+			fontFamily: {
+				heading: ['Zen Maru Gothic', 'sans-serif'], // Using Zen Maru Gothic as an alternative to Gen Jyuu Gothic
+				body: ['Poppins', 'sans-serif'],
+				sans: ['Poppins', 'sans-serif'],
+				alt: ['Space Grotesk', 'sans-serif'] // Alternative to Neue Machina
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
