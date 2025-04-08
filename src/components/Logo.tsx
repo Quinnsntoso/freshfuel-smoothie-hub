@@ -22,8 +22,8 @@ const Logo = ({ size = "default", className = "" }: LogoProps) => {
     ? "/lovable-uploads/49a4d497-2afe-4152-a0b8-4afd0081383f.png" // New logo for both backgrounds
     : "/lovable-uploads/49a4d497-2afe-4152-a0b8-4afd0081383f.png"; // Same logo for both backgrounds
 
-  // Determine width class based on size prop
-  const widthClass = size === "large" ? "w-40" : "w-28";
+  // Determine width class based on size prop - increased sizes
+  const widthClass = size === "large" ? "w-48" : "w-36";
 
   return (
     <Link to="/" className={`block ${className}`}>
