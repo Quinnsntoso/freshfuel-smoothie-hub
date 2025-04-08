@@ -29,9 +29,11 @@ const Footer = () => {
     <footer className={footerClasses}>
       <div className="container-custom">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-          <div className="col-span-1 md:col-span-1">
-            <Logo size="large" />
-            <p className={`mt-4 text-sm ${isDarkBackground() ? 'text-gray-300' : 'text-freshfuel-muteBlack'} font-body`}>
+          <div className="col-span-1 md:col-span-1 flex flex-col">
+            <div className="mb-auto">
+              <Logo size="large" className="mx-auto md:mx-0" />
+            </div>
+            <p className={`mt-4 text-sm ${isDarkBackground() ? 'text-gray-300' : 'text-freshfuel-muteBlack'} font-body text-center md:text-left`}>
               Fuel your day, Fresh every way!
             </p>
           </div>

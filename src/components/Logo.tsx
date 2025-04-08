@@ -4,9 +4,10 @@ import { useLocation } from "react-router-dom";
 
 type LogoProps = {
   size?: "default" | "large";
+  className?: string; // Add className prop for custom positioning
 };
 
-const Logo = ({ size = "default" }: LogoProps) => {
+const Logo = ({ size = "default", className = "" }: LogoProps) => {
   const location = useLocation();
   
   // Determine which logo to use based on current route
@@ -22,11 +23,11 @@ const Logo = ({ size = "default" }: LogoProps) => {
     : "/lovable-uploads/49a4d497-2afe-4152-a0b8-4afd0081383f.png"; // Same logo for both backgrounds
 
   // Determine width class based on size prop
-  const widthClass = size === "large" ? "w-48" : "w-32";
+  const widthClass = size === "large" ? "w-40" : "w-28";
 
   return (
-    <Link to="/" className="block">
-      <div className={widthClass}>
+    <Link to="/" className={`block ${className}`}>
+      <div className={`${widthClass}`}>
         <img 
           src={logoSrc}
           alt="Freshfuel Logo" 

@@ -22,7 +22,9 @@ const Navigation = () => {
 
   return (
     <nav className={navClasses}>
-      <Logo />
+      <div className="flex items-center">
+        <Logo className="my-auto" />
+      </div>
       <div className="flex items-center gap-4">
         <Link to="/about" className={linkClasses}>About Us</Link>
         <Link to="/smoothies" className={linkClasses}>Our Smoothies</Link>
