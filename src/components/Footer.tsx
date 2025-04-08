@@ -30,7 +30,7 @@ const Footer = () => {
       <div className="container-custom">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="col-span-1 md:col-span-1">
-            <Logo />
+            <Logo size="large" />
             <p className={`mt-4 text-sm ${isDarkBackground() ? 'text-gray-300' : 'text-freshfuel-muteBlack'} font-body`}>
               Fuel your day, Fresh every way!
             </p>
