@@ -11,79 +11,74 @@ const graySmoothieImage = "/lovable-uploads/a51759f2-f511-4e6e-acc3-a16d9641b052
 export const smoothies: SmoothieData[] = [
   {
     id: 1,
-    name: "GREEN DREAM",
-    tagline: "Nutritious Morning Boost",
-    ingredients: ["Spinach", "Banana", "Yogurt", "Spirulina"],
+    name: "SUNRISE OATS",
+    tagline: "Your smart breakfast on the go.",
+    ingredients: ["Banana", "Muesli & Oats", "Green Spirulina"],
     image: greenSmoothieImage,
     bgColor: "#c8e0a0", // light green
-    description: "Start your day with a nutritious boost of energy from our Green Dream smoothie, combining fresh vegetables with yogurt for a perfect balance.",
+    description: "A balanced, protein-rich blend to kickstart your morning with clean energy.",
     healthBenefits: [
-      "High in fiber for digestive health",
-      "Rich in chlorophyll for detoxification",
-      "Packed with antioxidants",
-      "Great source of plant-based nutrients"
+      "Supports digestion",
+      "Promotes sustained energy",
+      "Provides antioxidant support"
     ]
   },
   {
     id: 2,
-    name: "MANGO TANGO",
-    tagline: "Tropical fruit delight",
-    ingredients: ["Mango", "Pineapple", "Orange", "Coconut Milk"],
+    name: "TROPICAL IMMUNE",
+    tagline: "Immunity in every sip.",
+    ingredients: ["Mango", "Raspberry", "Vitamin C Powder"],
     image: orangeSmoothieImage,
     bgColor: "#ffc1a1", // orange
     isBestSeller: true,
-    description: "Our popular Mango Tango smoothie combines tropical fruits for a refreshing and vibrant drink that will transport you to paradise.",
+    description: "A vibrant tropical mix to boost your defenses and keep you energized.",
     healthBenefits: [
-      "Rich in vitamin C for immune support",
-      "Anti-inflammatory properties",
-      "High in digestive enzymes",
-      "Natural energy booster"
+      "Strengthens the immune system",
+      "Rich in antioxidants",
+      "Supports daily vitality"
     ]
   },
   {
     id: 3,
-    name: "BANANA BLAST",
-    tagline: "Perfect for Pre-workout",
-    ingredients: ["Banana", "Honey", "Oats", "Almond Milk"],
+    name: "ENERGY BLAST",
+    tagline: "Stay sharp. Stay energized!",
+    ingredients: ["Mango", "Banana", "Electrolyte Powder"],
     image: yellowSmoothieImage,
     bgColor: "#ffd485", // yellow
     isBestSeller: true,
-    description: "Prepare for your workout with our protein-rich Banana Blast smoothie, designed to provide sustainable energy and muscle support.",
+    description: "A refreshing, tropical energy booster designed to hydrate and power you through the day.",
     healthBenefits: [
-      "Potassium-rich for muscle function",
-      "Complex carbohydrates for sustained energy",
-      "Natural sugars for quick energy",
-      "Helps prevent muscle cramps"
+      "Restores electrolytes",
+      "Boosts stamina",
+      "Supports peak physical performance"
     ]
   },
   {
     id: 4,
-    name: "BERRY BLISS",
-    tagline: "Antioxidant powerhouse!",
-    ingredients: ["Strawberry", "Raspberry", "Blueberry", "Yogurt"],
+    name: "BEAUTY BURST",
+    tagline: "Glow from within.",
+    ingredients: ["Strawberry", "Raspberry", "Blueberry", "Collagen"],
     image: pinkSmoothieImage,
     bgColor: "#ffc1c8", // pink
-    description: "Our Berry Bliss smoothie is packed with antioxidant-rich berries to support radiant skin and overall wellness.",
+    description: "A fruity collagen blend that helps your skin stay radiant and healthy.",
     healthBenefits: [
-      "Rich in antioxidants to fight free radicals",
-      "Vitamin C for immune health",
-      "Anti-aging benefits",
-      "Supports cognitive function"
+      "Enhances skin elasticity",
+      "Supports collagen regeneration",
+      "Helps brighten complexion"
     ]
   },
   {
     id: 5,
-    name: "ACTIVE CHARCOAL",
-    tagline: "Detox & Cleanse",
-    ingredients: ["Activated Charcoal", "Banana", "Almond Milk", "Chia Seeds"],
+    name: "ACTIVE FUEL",
+    tagline: "Refuel. Recharge. Repeat.",
+    ingredients: ["Muesli", "Oats", "Banana", "Peanut Butter"],
     image: graySmoothieImage,
     bgColor: "#c9c9c9", // gray
-    description: "Cleanse and detoxify with our Active Charcoal smoothie, featuring activated charcoal and clean ingredients.",
+    description: "A post-workout blend designed to help your body bounce back, stronger.",
     healthBenefits: [
-      "Helps remove toxins from the body",
-      "Supports digestive health",
-      "Omega-3 fatty acids from chia seeds",
-      "Great for skin health"
+      "Aids muscle recovery",
+      "Supports digestion",
+      "Detoxifies with activated charcoal"
     ]
   }
 ];
