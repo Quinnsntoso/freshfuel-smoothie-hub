@@ -1,6 +1,7 @@
 
 import { Link, useLocation } from "react-router-dom";
 import Logo from "./Logo";
+import { Instagram } from "lucide-react";
 
 const Footer = () => {
   const location = useLocation();
@@ -31,7 +32,7 @@ const Footer = () => {
           <div className="col-span-1 md:col-span-1">
             <Logo />
             <p className={`mt-4 text-sm ${isDarkBackground() ? 'text-gray-300' : 'text-freshfuel-muteBlack'} font-body`}>
-              Providing healthy and delicious smoothies to fuel your day.
+              Fuel your day, Fresh every way!
             </p>
           </div>
           
@@ -57,14 +58,31 @@ const Footer = () => {
             <h3 className={headingClasses}>Connect With Us</h3>
             <p className={isDarkBackground() ? 'text-gray-300 mb-2' : 'text-freshfuel-muteBlack mb-2'}>Follow us on social media</p>
             <div className="flex space-x-4">
-              <a href="#" className={linkClasses}>
-                Instagram
+              <a href="https://www.instagram.com/drinkfreshfuel/" className={linkClasses} target="_blank" rel="noopener noreferrer">
+                <span className="flex items-center">
+                  <Instagram className="mr-2 h-5 w-5" />
+                  Instagram
+                </span>
               </a>
-              <a href="#" className={linkClasses}>
-                Facebook
-              </a>
-              <a href="#" className={linkClasses}>
-                Twitter
+              <a href="https://www.tiktok.com/@drinkfreshfuel" className={linkClasses} target="_blank" rel="noopener noreferrer">
+                <span className="flex items-center">
+                  <svg 
+                    className="mr-2 h-5 w-5"
+                    xmlns="http://www.w3.org/2000/svg" 
+                    width="24" 
+                    height="24" 
+                    viewBox="0 0 24 24" 
+                    fill="none" 
+                    stroke="currentColor" 
+                    strokeWidth="2" 
+                    strokeLinecap="round" 
+                    strokeLinejoin="round"
+                  >
+                    <path d="M9 12.2L11 14.75L16.5 9" />
+                    <path d="M12 2a9.96 9.96 0 0 0-7 2.93 10 10 0 0 0 11.83 16 10 10 0 0 0 5.17-5.66 9.95 9.95 0 0 0-1.1-9.2A10 10 0 0 0 12 2Z" />
+                  </svg>
+                  TikTok
+                </span>
               </a>
             </div>
           </div>
