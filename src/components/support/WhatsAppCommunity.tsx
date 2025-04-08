@@ -6,6 +6,7 @@ import { useToast } from "@/hooks/use-toast";
 const WhatsAppCommunity = () => {
   const [name, setName] = useState("");
   const [phoneNumber, setPhoneNumber] = useState("");
+  const [birthday, setBirthday] = useState("");
   const [agreedToTerms, setAgreedToTerms] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const { toast } = useToast();
@@ -23,6 +24,7 @@ const WhatsAppCommunity = () => {
       setIsSubmitting(false);
       setName("");
       setPhoneNumber("");
+      setBirthday("");
       setAgreedToTerms(false);
     }, 1500);
   };
@@ -42,7 +44,7 @@ const WhatsAppCommunity = () => {
               <span className="bg-green-100 p-1 rounded-full mr-2">
                 <Check className="h-4 w-4 text-green-600" />
               </span>
-              Weekly promotions and discounts
+              Special promotions and discounts
             </li>
             <li className="flex items-center">
               <span className="bg-green-100 p-1 rounded-full mr-2">
@@ -107,6 +109,20 @@ const WhatsAppCommunity = () => {
               />
             </div>
             
+            <div>
+              <label htmlFor="birthday" className="block text-sm font-medium mb-1">
+                Birthday Date
+              </label>
+              <input
+                id="birthday"
+                type="date"
+                className="w-full px-3 py-2 border border-gray-300 rounded-md"
+                value={birthday}
+                onChange={(e) => setBirthday(e.target.value)}
+                required
+              />
+            </div>
+            
             <div className="flex items-start">
               <input
                 id="terms"
@@ -123,7 +139,7 @@ const WhatsAppCommunity = () => {
             
             <button
               type="submit"
-              className="w-full py-2 px-4 bg-freshfuel-warmBeige text-white rounded-md hover:bg-freshfuel-warmBeige/90 transition-colors"
+              className="w-full py-2 px-4 bg-green-600 text-white rounded-md hover:bg-green-700 transition-colors"
               disabled={isSubmitting}
             >
               {isSubmitting ? "Joining..." : "Join Community"}

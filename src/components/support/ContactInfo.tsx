@@ -1,5 +1,5 @@
 
-import { Mail, Phone, Instagram } from "lucide-react";
+import { Mail, Phone, Instagram, MapPin } from "lucide-react";
 
 const ContactInfo = () => {
   return (
@@ -72,12 +72,15 @@ const ContactInfo = () => {
             </li>
           </ul>
           
-          <h3 className="text-xl font-medium mt-8 mb-4">Based In</h3>
+          <h3 className="text-xl font-medium mt-8 mb-4">Location</h3>
           <ul className="space-y-4">
-            <li>
-              <p className="font-medium">BSD City</p>
-              <p>BSD City, South Tangerang</p>
-              <p>Indonesia</p>
+            <li className="flex items-start">
+              <MapPin className="mr-3 h-5 w-5 text-freshfuel-gray shrink-0 mt-1" />
+              <div>
+                <p className="font-medium">Visit Our Main Store</p>
+                <p>BSD City, South Tangerang</p>
+                <p>Indonesia</p>
+              </div>
             </li>
           </ul>
         </div>
