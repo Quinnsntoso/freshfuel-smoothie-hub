@@ -14,8 +14,8 @@ const Logo = () => {
   
   // Use white logo for dark backgrounds, black logo for light backgrounds
   const logoSrc = useDarkBackground() 
-    ? "/lovable-uploads/49e13a68-545c-4567-a5d8-b049e35c3583.png" // White logo
-    : "/lovable-uploads/bbf5bb74-ebac-482d-9846-29e57742ceb8.png"; // Black logo
+    ? "/lovable-uploads/65512d21-fe5b-46df-baca-eb3356cd0498.png" // White version on dark background
+    : "/lovable-uploads/65512d21-fe5b-46df-baca-eb3356cd0498.png"; // Same logo for both backgrounds
 
   return (
     <Link to="/" className="block">
