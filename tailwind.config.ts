@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -52,15 +53,20 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
-				sidebar: {
-					DEFAULT: 'hsl(var(--sidebar-background))',
-					foreground: 'hsl(var(--sidebar-foreground))',
-					primary: 'hsl(var(--sidebar-primary))',
-					'primary-foreground': 'hsl(var(--sidebar-primary-foreground))',
-					accent: 'hsl(var(--sidebar-accent))',
-					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
-					border: 'hsl(var(--sidebar-border))',
-					ring: 'hsl(var(--sidebar-ring))'
+				// Freshfuel custom colors
+				freshfuel: {
+					green: "#a2c579",
+					pink: "#ffc1c8",
+					orange: "#ffcc80",
+					peach: "#ffd4a8",
+					gray: "#7a7a7a",
+				},
+				smoothie: {
+					green: "#c8e0a0",     // Sunrise Oats
+					pink: "#ffc1c8",      // Beauty Burst
+					gray: "#c9c9c9",      // Active Fuel
+					yellow: "#ffd485",    // Energy Blast
+					orange: "#ffc4a1",    // Tropical Immune
 				}
 			},
 			borderRadius: {
@@ -84,11 +90,26 @@ export default {
 					to: {
 						height: '0'
 					}
-				}
+				},
+				'carousel-left': {
+					'0%, 100%': { transform: 'translateX(0)' },
+					'50%': { transform: 'translateX(-5%)' },
+				},
+				'carousel-right': {
+					'0%, 100%': { transform: 'translateX(0)' },
+					'50%': { transform: 'translateX(5%)' },
+				},
+				'float': {
+					'0%, 100%': { transform: 'translateY(0)' },
+					'50%': { transform: 'translateY(-10px)' },
+				},
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'float': 'float 3s ease-in-out infinite',
+				'carousel-left': 'carousel-left 2s ease-in-out infinite',
+				'carousel-right': 'carousel-right 2s ease-in-out infinite',
 			}
 		}
 	},
