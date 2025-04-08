@@ -86,7 +86,7 @@ const Smoothies = () => {
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600">
-                  Get a natural energy boost from our perfectly balanced blend of fruits, vegetables, and superfoods.
+                  Get a natural energy boost from our perfectly balanced blend of fruits, nuts, and superfoods.
                 </p>
               </CardContent>
             </Card>
@@ -104,7 +104,7 @@ const Smoothies = () => {
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600">
-                  Strengthen your immune system with our vitamin-rich smoothies designed to keep you healthy year-round.
+                  Packed with antioxidants and vitamins to strengthen your body's natural defense system daily.
                 </p>
               </CardContent>
             </Card>
@@ -165,7 +165,7 @@ const Smoothies = () => {
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600">
-                  Perfect for post-workout recovery, our protein-rich options help repair and build muscles.
+                  Post-workout blends with protein and electrolytes help rebuild and recharge tired muscles faster.
                 </p>
               </CardContent>
             </Card>

@@ -10,6 +10,51 @@ interface SmoothieDetailProps {
 }
 
 const SmoothieDetail = ({ smoothie, onClose }: SmoothieDetailProps) => {
+  // Get color for special ingredients based on smoothie type
+  const getIngredientStyle = (ingredient: string) => {
+    const highlightMap: Record<string, {color: string, bgColor: string, textColor: string}> = {
+      "Collagen": {
+        color: "#fca7b1", // Pink for Beauty Burst
+        bgColor: "#fca7b150",
+        textColor: "#000000"
+      },
+      "Active Charcoal": {
+        color: "#6b6b6b", // Gray for Active Fuel
+        bgColor: "#6b6b6b50",
+        textColor: "#ffffff"
+      },
+      "Electrolyte Powder": {
+        color: "#ffd485", // Yellow for Energy Blast
+        bgColor: "#ffd48550",
+        textColor: "#000000"
+      },
+      "Vitamin C Powder": {
+        color: "#ffc1a1", // Orange for Tropical Immune
+        bgColor: "#ffc1a150", 
+        textColor: "#000000"
+      },
+      "Green Spirulina": {
+        color: "#c8e0a0", // Light Green for Sunrise Oats
+        bgColor: "#c8e0a050",
+        textColor: "#000000"
+      }
+    };
+    
+    // Find if this ingredient contains a key from our highlight map
+    for (const [key, style] of Object.entries(highlightMap)) {
+      if (ingredient.includes(key)) {
+        return {
+          backgroundColor: style.bgColor,
+          color: style.textColor,
+          borderColor: style.color,
+          borderWidth: '2px',
+          fontWeight: 'bold' as const
+        };
+      }
+    }
+    return {};
+  };
+
   return (
     <div className="py-16 bg-gray-50">
       <div className="container-custom">
@@ -62,7 +107,8 @@ const SmoothieDetail = ({ smoothie, onClose }: SmoothieDetailProps) => {
                 {smoothie.ingredients.map((ingredient, index) => (
                   <span 
                     key={index}
-                    className="bg-white border-2 border-black px-3 py-1 rounded-full text-sm"
+                    className="bg-white border border-black px-3 py-1 rounded-full text-sm"
+                    style={getIngredientStyle(ingredient)}
                   >
                     {ingredient}
                   </span>
