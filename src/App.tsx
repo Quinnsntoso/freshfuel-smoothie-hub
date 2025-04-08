@@ -9,6 +9,7 @@ import Smoothies from "./pages/Smoothies";
 import Blogs from "./pages/Blogs";
 import Support from "./pages/Support";
 import NotFound from "./pages/NotFound";
+import WhatsAppCommunity from "./components/support/WhatsAppCommunity";
 
 const queryClient = new QueryClient();
 
@@ -24,6 +25,7 @@ const App = () => (
           <Route path="/smoothies" element={<Smoothies />} />
           <Route path="/blogs" element={<Blogs />} />
           <Route path="/support" element={<Support />} />
+          <Route path="/support/community" element={<Support />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>

@@ -172,9 +172,9 @@ const Smoothies = () => {
           </div>
           
           <div className="mt-16 text-center">
-            <h2 className="text-3xl font-bold mb-6">Join Our Community</h2>
+            <h2 className="text-3xl font-bold mb-6">Join Our WhatsApp Community</h2>
             <p className="text-gray-600 max-w-2xl mx-auto mb-8">
-              Connect with fellow smoothie lovers and get exclusive recipes, promotions, and wellness tips.
+              Did you know Freshfuel has a <span className="font-bold" style={{ color: "#030260" }}>WhatsApp Community</span>? Join our club now to enjoy <span className="font-bold" style={{ color: "#a91a30" }}>exclusive smoothie deals</span> and stay <span className="font-bold" style={{ color: "#a91a30" }}>up to date</span> with Freshfuel!
             </p>
             <a href="/support/community" className="px-8 py-3 bg-black text-white rounded-full text-lg font-medium hover:bg-gray-800 transition-colors inline-flex items-center gap-2">
               Join Our Community
