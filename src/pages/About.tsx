@@ -1,4 +1,3 @@
-
 import Layout from "../components/Layout";
 
 const About = () => {
@@ -10,8 +9,11 @@ const About = () => {
         <div className="container-custom">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-5xl font-bold mb-6">About Freshfuel</h1>
-            <p className="text-xl mb-8">
+            <p className="text-xl mb-4">
               Freshfuel is an Indonesian smoothie company offering healthy, tasty, and practical options personalized with AI technology.
+            </p>
+            <p className="text-xl italic mb-8">
+              "Fuel Your Day, Fresh Every Way"
             </p>
             
             <div className="bg-white p-8 rounded-lg shadow-md">

@@ -1,4 +1,3 @@
-
 import Layout from "../components/Layout";
 import { Link } from "react-router-dom";
 
@@ -13,7 +12,7 @@ const Index = () => {
                 Fresh. Nutritious. <br/> Delicious.
               </h1>
               <p className="text-xl md:text-2xl text-freshfuel-muteBlack mb-12">
-                Fuel your body with nature's goodness, one smoothie at a time.
+                Fuel Your Day, Fresh Every Way
               </p>
               
               <div className="flex flex-wrap gap-6 justify-center">
