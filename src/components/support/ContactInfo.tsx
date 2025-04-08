@@ -1,5 +1,5 @@
 
-import { Mail, Phone, Instagram, Facebook } from "lucide-react";
+import { Mail, Phone, Instagram } from "lucide-react";
 
 const ContactInfo = () => {
   return (
@@ -29,22 +29,6 @@ const ContactInfo = () => {
                   +62 882-4547-2468
                 </a>
               </div>
-            </li>
-          </ul>
-          
-          <h3 className="text-xl font-medium mt-8 mb-4">Business Hours</h3>
-          <ul className="space-y-2">
-            <li className="flex justify-between">
-              <span>Monday - Friday</span>
-              <span>8:00 AM - 8:00 PM</span>
-            </li>
-            <li className="flex justify-between">
-              <span>Saturday</span>
-              <span>9:00 AM - 6:00 PM</span>
-            </li>
-            <li className="flex justify-between">
-              <span>Sunday</span>
-              <span>10:00 AM - 4:00 PM</span>
             </li>
           </ul>
         </div>
@@ -88,7 +72,7 @@ const ContactInfo = () => {
             </li>
           </ul>
           
-          <h3 className="text-xl font-medium mt-8 mb-4">Store Location</h3>
+          <h3 className="text-xl font-medium mt-8 mb-4">Based In</h3>
           <ul className="space-y-4">
             <li>
               <p className="font-medium">BSD City</p>
