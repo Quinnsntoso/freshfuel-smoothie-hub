@@ -6,6 +6,12 @@ interface SmoothieSlideProps {
   onClick?: () => void;
 }
 
+interface HighlightStyle {
+  ingredient: string;
+  color: string;
+  textColor: string;
+}
+
 const SmoothieSlide = ({ smoothie, onClick }: SmoothieSlideProps) => {
   // Function to get the appropriate gradient based on smoothie name
   const getGradientStyle = () => {
@@ -13,7 +19,7 @@ const SmoothieSlide = ({ smoothie, onClick }: SmoothieSlideProps) => {
       case "BEAUTY BURST":
         return "linear-gradient(135deg, #fefcf5, rgba(252, 167, 177, 0.7), #fca7b1, rgba(252, 167, 177, 0.7), #fefcf5)";
       case "ACTIVE FUEL":
-        return "linear-gradient(135deg, #fefcf5, rgba(255, 215, 152, 0.7), #f6c16c, rgba(246, 193, 108, 0.7), #fefcf5)";
+        return "linear-gradient(135deg, #fefcf5, rgba(107, 107, 107, 0.7), #6b6b6b, rgba(107, 107, 107, 0.7), #fefcf5)";
       case "ENERGY BLAST":
         return "linear-gradient(135deg, #fefcf5, rgba(255, 215, 152, 0.7), #f6c16c, rgba(246, 193, 108, 0.7), #fefcf5)";
       case "TROPICAL IMMUNE":
@@ -28,16 +34,16 @@ const SmoothieSlide = ({ smoothie, onClick }: SmoothieSlideProps) => {
 
   // Function to determine if an ingredient should be highlighted and with which color
   const getIngredientStyle = (ingredient: string) => {
-    const highlightMap: Record<string, string> = {
+    const highlightMap: Record<string, HighlightStyle> = {
       "BEAUTY BURST": {
         ingredient: "Collagen",
         color: "#fca7b1", // Pink
         textColor: "#ffffff"
       },
       "ACTIVE FUEL": {
-        ingredient: "Peanut Butter", // No "Active Charcoal" in ingredients, using available ingredient
-        color: "#c9c9c9", // Gray
-        textColor: "#000000"
+        ingredient: "Active Charcoal",
+        color: "#6b6b6b", // Darker Gray
+        textColor: "#ffffff"
       },
       "ENERGY BLAST": {
         ingredient: "Electrolyte Powder",
@@ -63,7 +69,7 @@ const SmoothieSlide = ({ smoothie, onClick }: SmoothieSlideProps) => {
         backgroundColor: highlight.color,
         color: highlight.textColor,
         borderColor: highlight.color,
-        fontWeight: 'bold'
+        fontWeight: 'bold' as const
       };
     }
     return {};
