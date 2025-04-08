@@ -15,7 +15,7 @@ const ContactInfo = () => {
               <Mail className="mr-3 h-5 w-5 text-freshfuel-gray shrink-0" />
               <div>
                 <p className="font-medium">Email</p>
-                <a href="mailto:freshfuel25@gmail.com" className="text-[#a91a30] hover:underline">
+                <a href="mailto:freshfuel25@gmail.com" className="text-blue-600 hover:underline">
                   freshfuel25@gmail.com
                 </a>
               </div>
@@ -25,7 +25,7 @@ const ContactInfo = () => {
               <Phone className="mr-3 h-5 w-5 text-freshfuel-gray shrink-0" />
               <div>
                 <p className="font-medium">WhatsApp Business</p>
-                <a href="https://wa.me/6288245472468" className="text-[#a91a30] hover:underline">
+                <a href="https://wa.me/6288245472468" className="text-blue-600 hover:underline">
                   +62 882-4547-2468
                 </a>
               </div>
@@ -41,7 +41,7 @@ const ContactInfo = () => {
               <Instagram className="mr-3 h-5 w-5 text-freshfuel-gray" />
               <div>
                 <p className="font-medium">Instagram</p>
-                <a href="https://instagram.com/drinkfreshfuel" className="text-[#a91a30] hover:underline">
+                <a href="https://instagram.com/drinkfreshfuel" className="text-blue-600 hover:underline">
                   @drinkfreshfuel
                 </a>
               </div>
@@ -65,7 +65,7 @@ const ContactInfo = () => {
               </svg>
               <div>
                 <p className="font-medium">TikTok</p>
-                <a href="https://tiktok.com/@drinkfreshfuel" className="text-[#a91a30] hover:underline">
+                <a href="https://tiktok.com/@drinkfreshfuel" className="text-blue-600 hover:underline">
                   @drinkfreshfuel
                 </a>
               </div>
