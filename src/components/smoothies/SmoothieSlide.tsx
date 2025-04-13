@@ -80,7 +80,7 @@ const SmoothieSlide = ({ smoothie }: SmoothieSlideProps) => {
         background: getGradientStyle()
       }}
     >
-      <div className="container-custom h-full flex flex-col items-center justify-center pt-10">
+      <div className="container-custom h-full flex flex-col items-center justify-center pt-10 pb-16">
         <p className="text-xl mb-2">Freshfuel <em className="font-semibold italic">Signature</em> Smoothies</p>
         <h2 className="text-6xl md:text-7xl font-bold mb-8 text-white drop-shadow-md">{smoothie.name}</h2>
         
