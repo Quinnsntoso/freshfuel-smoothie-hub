@@ -98,26 +98,26 @@ const SmoothieSlide = ({ smoothie }: SmoothieSlideProps) => {
           </div>
         </div>
 
-        <div className="relative w-64 md:w-80 mb-4 z-10">
+        <div className="relative w-64 md:w-80 mb-4 z-10 flex flex-col items-center""> //iniiiiiiii
           <img 
-            src={smoothie.image} 
-            alt={smoothie.name} 
-            className="w-full h-auto object-contain"
-            style={{ maxHeight: '300px' }}
-          />
+    src={smoothie.image} 
+    alt={smoothie.name} 
+    className="w-full h-auto object-contain z-10"
+    style={{ maxHeight: '300px' }}
+  />
           
-          <div className="absolute inset-0 -z-10 flex flex-wrap justify-around items-center">
-            {smoothie.ingredients.map((ingredient, index) => (
-              <div 
-                key={index}
-                className="ingredient-tag m-2"
-                style={getIngredientStyle(ingredient)}
-              >
-                {ingredient}
-              </div>
-            ))}
-          </div>
-        </div>
+         <div className="mt-6 flex flex-wrap justify-center gap-2 z-20">
+    {smoothie.ingredients.map((ingredient, index) => (
+      <div 
+        key={index}
+        className="ingredient-tag px-3 py-1 text-xs rounded-full shadow"
+        style={getIngredientStyle(ingredient)}
+      >
+        {ingredient}
+      </div>
+    ))}
+  </div>
+</div>
       </div>
     </div>
   );
